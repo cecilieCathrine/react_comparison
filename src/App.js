@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
-      <WhereToGo msg="Where to go?" />
+      <WhereToGo msg="Help! Where to go?" />
     </div>
   );
 }
