@@ -1,15 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import WhereToGo from "./components/WhereToGo";
+import News from "./components/News";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-      </header>
-      <WhereToGo msg="Where to go?" />
+      <News />
+      <a href="https://newsapi.org/">Powered by News Api</a> 
     </div>
   );
 }
