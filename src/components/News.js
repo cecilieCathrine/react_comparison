@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./news.css";
+import { Message } from "./Message";
 
-function News() {
+export const News = () =>  {
   const [language, setLanguage] = useState("no");
   const [articles, setArticles] = useState([]);
   const [query, setQuery] = useState("");
@@ -83,7 +84,7 @@ function News() {
               </div>
             );
           })}
-        {articles.length === 0 && <span>No articles found</span>}
+        {articles.length === 0 && <Message message="No articles found" />}
       </div>
     </React.Fragment>
   );
